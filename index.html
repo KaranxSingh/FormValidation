@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+
+        <form onsubmit="return validate()">
+        <label> Name: </label> 
+        <input type="text" placeholder="Full Name" class="input" id="uname">
+        <p id="unameError" class="error"></p>
+
+            <br><br>
+
+        <label >Gender: </label> 
+        <select class="input" id="gender">
+        <option>Male</option>
+        <option>Female</option>
+        </select>
+        <p id="genderError" class="error"></p>
+        
+        <br> <br>
+
+        <label> Email: </label> 
+        <input type="text" placeholder="Email" class="input" id="email">
+        <p id="emailError" class="error"></p>
+        <br><br>
+
+        <label> Password: </label> 
+        <input type="password" placeholder="Password" 
+         id="pass" class="pass">
+        <p id="passError" class="error"></p>
+        <br><br>
+
+        <label>Confirm Password: </label> 
+        <input type="password" placeholder="Confirm Password"  id="cnfrmPass" class="pass">
+        <p id="cnfrmPassError" class="error"></p>
+
+        <br> <br>
+
+        <label> Phone Number: </label>
+        <input type="text" placeholder="Phone Number" class="input" id="num">
+        <p id="numError" class="error"></p>
+        <br> <br>
+
+        <label> Date of Birth: </label>
+        <select class="input" >
+            <option >1</option>
+            <option >2</option>
+            <option >3</option>
+            <option >4</option>
+            <option >5</option>
+            <option >6</option>
+            <option >7</option>
+            <option >8</option>
+            <option >9</option>
+            <option >10</option>
+            <option >11</option>
+            <option >12</option>
+            <option >13</option>
+            <option >14</option>
+            <option >15</option>
+            <option >16</option>
+            <option >17</option>
+            <option >18</option>
+            <option >19</option>
+            <option >20</option>
+            <option >21</option>
+            <option >22</option>
+            <option >23</option>
+            <option >24</option>
+            <option >25</option>
+            <option >26</option>
+            <option >27</option>
+            <option >28</option>
+            <option >29</option>
+            <option >30</option>
+            <option >31</option>
+        </select>
+
+        <select class="input">
+            <option >January</option>
+            <option >February</option>
+            <option >March</option>
+            <option >April</option>
+            <option >May</option>
+            <option >June</option>
+            <option >July</option>
+            <option >August</option>
+            <option >September</option>
+            <option >October</option>
+            <option >November</option>
+            <option >December</option>
+        </select>
+
+        <select class="input">
+            <option >1996</option>
+            <option >1997</option>
+            <option >1998</option>
+            <option >1999</option>
+            <option >2000</option>
+            <option >2001</option>
+            <option >2002</option>
+            <option >2003</option>
+            <option >2004</option>
+        </select>
+
+        <br><br>
+
+        <button>Submit</button>
+
+        </form>
+    </div>
+
+
+
+    <script src="Script.js"></script>
+</body>
+</html>
