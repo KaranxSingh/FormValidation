@@ -12,13 +12,13 @@ function validate() {
 
     // username validation 
     if (uname.value == "") {
-        document.getElementById("unameError").innerHTML = "username can't be empty";
+        document.getElementById("unameError").innerHTML = "Username can't be empty";
         flag = 0;
     } else if (uname.value.length >= 3) {
         document.getElementById("unameError").innerHTML = "";
         flag = 1;
     } else {
-        document.getElementById("unameError").innerHTML = "3 char required";
+        document.getElementById("unameError").innerHTML = "Minimum 3 characters required";
         flag = 0;
     }
 
@@ -28,36 +28,24 @@ function validate() {
         document.getElementById("emailError").innerHTML = "";
         flag = 1;
     } else{
-        document.getElementById("emailError").innerHTML = "email is invalids";
+        document.getElementById("emailError").innerHTML = "Email is not valid";
         flag = 0;
     }
 
 
         // password validation
     if (pass.value == "") {
-        document.getElementById("passError").innerHTML = "Password is empty";
+        document.getElementById("passError").innerHTML = "Password can't empty";
         flag = 0;
-    }else if (pass.value >= 8) {
+    }else if (pass.value.length >= 8) {
         document.getElementById("passError").innerHTML = "";
         flag = 1; 
     } else {
-        document.getElementById("passError").innerHTML = "Weak password";
+        document.getElementById("passError").innerHTML = "Your password is weak";
         flag = 0; 
     }
-
-
-        //confirm password
-    // if (pass != cnfrmPass ){
-    //     document.getElementById("cnfrmPassError").innerHTML = "please match the password";
-    //     flag =0;
-    // } else if (pass == cnfrmPass) {
-    //     document.getElementById("cnfrmPassError").innerHTML = "";
-    //     flag=1;
-    // }
-
     
     //phone number validation
-
     if (num.value.match(regex)) {
         document.getElementById("numError").innerHTML = "";
     } else {
