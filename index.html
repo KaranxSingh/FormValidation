@@ -10,9 +10,9 @@
 <body>
     <div id="main">
 
-        <form onsubmit="return validate()">
+        <form onsubmit="return validate()" action="#">
         <label> Name: </label> 
-        <input type="text" placeholder="Full Name" class="input" id="uname">
+        <input type="text" placeholder="Full Name" class="input" id="uname" onkeyup="validate()">
         <p id="unameError" class="error"></p>
 
             <br><br>
@@ -27,18 +27,24 @@
         <br> <br>
 
         <label> Email: </label> 
-        <input type="text" placeholder="Email" class="input" id="email">
+        <input type="text" placeholder="Email" class="input" id="email" onkeyup="validate()">
         <p id="emailError" class="error"></p>
         <br><br>
 
         <label> Password: </label> 
         <input type="password" placeholder="Password" 
-         id="pass" class="pass">
+         id="pass" class="pass" onkeyup="validate()">
         <p id="passError" class="error"></p>
         <br><br>
 
+        <label>Confirm Password: </label> 
+        <input type="password" placeholder="Confirm Password"  id="cnfrmPass" class="pass" onkeyup="validate()">
+        <p id ="cnfrmPassError" class="error"></p>
+
+        <br> <br>
+
         <label> Phone Number: </label>
-        <input type="text" placeholder="Phone Number" class="input" id="num">
+        <input type="text" placeholder="Phone Number" class="input" id="num" onkeyup="validate()">
         <p id="numError" class="error"></p>
         <br> <br>
 
